@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    background-color: #F7F7F0;
+}
+
+.logo-site{
+    height: 100px;
+    border-right: 2px solid black;
+}
+
+.logo-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.titulo-page{
+    display: flex;
+    height: 20px;
+    margin: 0px 20px;
+    align-items: center;
+}
+
+.menu-api ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    padding: 10px 0px;
+    margin: 0px;
+    background-color: #7A40E1;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.menu-api ul li{
+    list-style: none;
+}
+
+.menu-api ul li:hover{
+    list-style: none;
+    border: 2px solid black;
+}
+
+.menu-api ul li a{
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.subtitulo-page{
+    margin: 20px 30px;
+    color: #69558B;
+}
+
+h3{
+    margin: 0px 30px;
+    font-size: 17px;
+}
+
+p{
+    margin: 8px 30px
+}
+
+.img-subtitle{
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
+
+.img-position{
+    display: flex;
+    justify-content: center;
+}
+
+#img-conceito{
+    width: 500px;
+}
+
+#img-exemplo{
+    width: 500px;
+}
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    background-color: #7A40E1;
+}
