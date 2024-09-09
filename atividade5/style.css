@@ -1,0 +1,50 @@
+h1{
+    color: white;
+    background-color: green;
+}
+h1::after{
+    content: "VERDE";
+}
+
+@media screen and (max-width: 420px) { 
+    h1{
+        background-color: gray;
+    }
+    h1::after{
+        content: "CINZA";
+    }
+ }
+@media screen and (max-width: 768px) and (min-width: 421px) { 
+    h1{
+        background-color: orange;
+    }
+    h1::after{
+        content: "LARANJA";
+    }
+ }
+@media screen and (max-width: 1024px) and (min-width: 769px) { 
+    h1{
+        background-color: red;
+    }
+    h1::after{
+        content: "VERMELHO";
+    }
+ }
+@media screen and (max-width: 1080px) and (min-width: 1025px) { 
+    h1{
+        background-color: blue;
+    }
+    h1::after{
+        content: "AZUL";
+    }
+ }
+ @media screen and (max-width: 1920px) and (min-width: 1089px) { 
+    h1{
+        background-color: yellow;
+    }
+    h1::after{
+        content: "AMARELO";
+    }
+ }
+
+
