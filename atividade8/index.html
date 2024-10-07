@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <header>
+        <h1>AVALIAÇÃO DOS FILMES</h1>
+    </header>
+    <main>
+        <div class="forms">
+            <h2>Informações do Espectador</h2>
+            <div class="infos-forms">
+                <div class="idade">
+                    <label for="txt-idade">Idade: </label><input type="text" id="txt-idade">
+                </div>
+                <div class="gen">
+                    <input type="radio" name="genero" id="masc" value="Masculino"><label for="masc">Masculino</label>
+                    <input type="radio" name="genero" id="fem" value="Feminino"><label for="fem" >Feminino</label>
+                </div>
+                <div class="avaliacao">
+                    <label for="opn">Avalie o filme:</label>
+                    <p> (1 - Péssimo, 2 - Regular, 3 - Bom, 4 - Ótimo)</p>
+                    <input type="text" id="opn">
+                </div>
+                <div class="btn">
+                    <input type="button" value="Enviar" onclick="enviar()">
+                </div>
+                <div class="btn-infos">
+                    <input type="button" value="Média de Idade" onclick="avgAge()">
+                    <input type="button" value="Pessoa mais velha" onclick="older()">
+                    <input type="button" value="Pessoa mais nova" onclick="younger()">
+                    <input type="button" value="Quantas pessoas responderam péssimo?" onclick="pessimo()">
+                    <input type="button" value="Porcentagem de pessoas que responderam bom e ótimo" onclick="bom()">
+                    <input type="button" value="Quantidade de opiniões por genêro" onclick="contGenero()">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="ativ8.js"></script>
+</body>
+</html>
