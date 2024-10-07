@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <header>
+        <h1>MULTIFUNÇÕES</h1>
+    </header>
+    <main>
+        <section class="container-funcoes">
+            <h2 class="titulo-funcoes">O MAIOR</h2>
+            <div id="container-maior">
+                <label for="valor1m" class="label-maior">Valor 1: </label><input type="text" id="valor1m">
+                <label for="valor2m" class="label-maior">Valor 2: </label><input type="text" id="valor2m">
+                <label for="valor3m" class="label-maior">Valor 3: </label><input type="text" id="valor3m">
+            </div>
+            <div class="container-btn">
+                <input type="button" value="Mostrar o maior" class="btn" onclick="maior()">
+                <p class="resposta"></p>
+            </div>
+        </section>
+        <section class="container-funcoes">
+            <h2 class="titulo-funcoes">EM ORDEM CRESCENTE</h2>
+            <div id="container-ordem">
+                <label for="valor1o">Valor 1: </label><input type="text" id="valor1o">
+                <label for="valor2o">Valor 2: </label><input type="text" id="valor2o">
+                <label for="valor3o">Valor 3: </label><input type="text" id="valor3o">
+            </div>
+            <div class="container-btn">
+                <input type="button" value="Mostrar em ordem crescente" class="btn" onclick="order()">
+                <p class="resposta"></p>
+            </div>
+        </section>
+        <section class="container-funcoes">
+            <h2 class="titulo-funcoes">TRIÂNGULO</h2>
+            <div id="container-triangulo">
+                <label for="valor1t">Valor 1: </label><input type="text" id="valor1t">
+                <label for="valor2t">Valor 2: </label><input type="text" id="valor2t">
+                <label for="valor3t">Valor 3: </label><input type="text" id="valor3t">
+            </div>    
+            <div class="container-btn">
+                <input type="button" value="Verificar Triângulo" class="btn" onclick="verifTriangulo()">
+                <p class="resposta"></p>
+            </div>    
+        </section>
+        <section class="container-funcoes">
+            <h2 class="titulo-funcoes">É PALÍNDROMO?</h2>
+            <div id="container-palindromo">
+                <input type="text" id="plvP" placeholder="Insira uma palavra...">
+            </div>
+            <div class="container-btn">
+                <input type="button" value="Verificar" class="btn" onclick="palindromo()">
+                <p class="resposta"></p>
+            </div>        
+        </section>
+    </main>
+    <script src="ativ9.js"></script>
+</body>
+</html>
