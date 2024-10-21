@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    height: 30%;
+    padding: 20px 0px;
+    background-color: blueviolet;
+    border-bottom: 2px solid black;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.container-imc{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    margin-top: 30px;
+    gap: 5px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#btn-calc{
+    margin-top: 20px;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#peso, #altura{
+    border: 2px solid black;
+}
