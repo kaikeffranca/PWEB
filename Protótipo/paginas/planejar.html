@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planE</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/reset.css">
+    <link rel="stylesheet" href="../src/font.css">
+</head>
+<body>
+    <header id="header-index">
+        <a href="../index.html"><img src="../src/img/logo-planE.png" alt="logo" id="logo"></a>
+    </header>
+    <section id="espaco-para-btn">
+        <input type="button" value="Criar Tarefa +" id="btn-criar-tarefa" onclick="criarTarefa()">
+    </section>
+    <main id="tela-planejamento">
+        <section id="preparativos" class="quadros-tarefa">
+            <h2 class="title-tarefa">Preparativos</h2>
+            <div class="andamento">
+                <h3 class="status-title">Em andamento</h3>
+            </div>
+            <div class="concluido">
+                <h3 class="status-title">Concluído</h3>
+            </div>
+            <div class="atraso">
+                <h3 class="status-title">Atrasado</h3>               
+            </div>
+        </section>
+        <section id="durante-a-viagem" class="quadros-tarefa">
+            <h2 class="title-tarefa">Durante a viagem</h2>
+            <div class="andamento">
+                <h3 class="status-title">Em andamento</h3>
+                <div class="card">
+                    <h4 class="card-title">Conhecer o Coliseu</h4>
+                    <p class="list-title">Participantes:</p>
+                    <ul class="participantes-list">
+                        <li>Kaike</li>
+                        <li>Isabela</li>
+                    </ul>
+                    <p class="data">Data: 09/02/2025</p>
+                    <input type="button" value="Editar" class="edit" onclick="editarTarefa()">
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Assistir Jogo da Roma</h4>
+                    <p class="list-title">Participantes:</p>
+                    <ul class="participantes-list">
+                        <li>Kaike</li>
+                    </ul>
+                    <p class="data">Data: 13/02/2025</p>
+                    <input type="button" value="Editar" class="edit" onclick="editarTarefa()">
+                </div>
+            </div>
+            <div class="concluido">
+                <h3 class="status-title">Concluído</h3>
+            </div>
+            <div class="atraso">
+                <h3 class="status-title">Atrasado</h3>               
+            </div>
+        </section>
+        <section id="finalizacao" class="quadros-tarefa">
+            <h2 class="title-tarefa">Finalização</h2>
+            <div class="andamento">
+                <h3 class="status-title">Em andamento</h3>
+            </div>
+            <div class="concluido">
+                <h3 class="status-title">Concluído</h3>
+            </div>
+            <div class="atraso">
+                <h3 class="status-title">Atrasado</h3>               
+            </div>
+        </section>
+    </main>
+    <div id="modal-container-criar">
+        <div id="criar-modal">
+            <label for="desc-tarefa">Tarefa: </label><input type="text" id="desc-tarefa">
+            <label for="nome-participantes">Participantes(Use vírgula para separar os nomes): </label><input type="text" id="nome-participantes">
+            <label for="set-data">Data</label><input type="date" name="set-data" id="set-data">
+            <input type="button" value="Criar" id="btn-realizar">
+        </div>
+    </div>
+    <div id="modal-container-editar">
+        <div id="editar-modal">
+            <label for="desc-tarefa">Tarefa: </label><input type="text" id="desc-tarefa">
+            <label for="nome-participantes">Participantes(Use vírgula para separar os nomes): </label><input type="text" id="nome-participantes">
+            <label for="set-data">Data</label><input type="date" name="set-data" id="set-data">
+            <input type="button" value="Editar" id="btn-realizar">
+        </div>
+    </div>
+    <script src="../src/script.js"></script>
+</body>
+</html>
