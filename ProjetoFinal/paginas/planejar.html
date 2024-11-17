@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planE</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/reset.css">
+    <link rel="stylesheet" href="../src/font.css">
+</head>
+<body>
+    <header id="header-index">
+        <a href="../index.html"><img src="../src/img/logo-planE.png" alt="logo" id="logo"></a>
+    </header>
+    <section id="espaco-para-btn">
+        <input type="button" value="Criar Tarefa +" id="btn-criar-tarefa" onclick="abrirTarefa()">
+    </section>
+    <main id="tela-planejamento">
+        <section id="preparativos" class="quadros-tarefa" data-fase="1" ondrop="drop_handler(event)" ondragover="dragover_handler(event)">
+            <h2 class="title-tarefa">Preparativos</h2>
+            <div class="andamento">
+                <div class="separador" data-div="1">
+                </div>
+            </div>
+        </section>
+        <section id="durante-a-viagem" class="quadros-tarefa" data-fase="2" ondrop="drop_handler(event)" ondragover="dragover_handler(event)">
+            <h2 class="title-tarefa">Durante a viagem</h2>
+            <div class="andamento" >
+                <div class="separador" data-div="2" >
+                </div>
+            </div>
+        </section>
+        <section id="finalizacao" class="quadros-tarefa" data-fase="3" ondrop="drop_handler(event)" ondragover="dragover_handler(event)">
+            <h2 class="title-tarefa">Finalização</h2>
+            <div class="andamento">
+                <div class="separador" data-div="3" ondrop="drop_handler(event)" ondragover="dragover_handler(event)">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="modal-container-criar">
+        <div id="criar-modal">
+            <button onclick="closeModal()">x</button>
+            <input type="hidden" id="IdInput">
+            <label for="desc-tarefa">Tarefa: </label><input type="text" id="desc-tarefa">
+            <label for="nome-participantes" id="participantes-lbl">Participantes(Use vírgula para separar os nomes): </label><input type="text" id="nome-participantes">
+            <label for="set-data">Data</label><input type="date" name="set-data" id="set-data">
+            <div class="fases-container">
+                <label for="fase">Fase</label>
+                <select id="fase">
+                    <option value="1">Preparativos</option>
+                    <option value="2">Durante a Viagem</option>
+                    <option value="3">Finalização</option>
+                </select>
+            </div>
+            <input type="button" value="Criar" class="btn-realizar" onclick="createTask()" id="create-btn">
+            <input type="button" value="Editar" class="btn-realizar" onclick="editTask()" id="edit-btn">
+        </div>
+    </div>
+    <script src="../src/moment.js"></script>
+    <script src="../src/script.js"></script>
+</body>
+</html>

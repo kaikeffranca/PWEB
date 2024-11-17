@@ -1,0 +1,295 @@
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+#header-index{
+    width: 100%;
+    height: 100px;
+    background-color: #1C82A2;
+    text-align: center;
+}
+
+#logo{
+    height: 100%;
+}
+
+#mkt{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#mkt-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#mkt-tit{
+    font-size: 50px;
+    font-weight: 600;
+    color: #1C82A2;
+}
+
+.btn-planejar-container{
+    width: 100%;
+    text-align: center;
+}
+#btn-planejar{
+    background-color: #1C82A2;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn{
+    width: 150%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+
+#modal-container-login, #modal-container-cadastro, #modal-container-criar, #modal-container-editar{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000a9;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#criar-modal button{
+    position: relative;
+    width: 20px;
+    left: 60%;
+    background-color: red;
+    color: white;
+    border-radius: 40px;
+}
+
+#modal-container-criar.mostrar{
+    display: flex;
+}
+
+#modal-container-login.mostrar{
+    display: flex;
+}
+
+#modal-container-cadastro.mostrar{
+    display: flex;
+}
+
+#modal-container-editar.mostrar{
+    display: flex;
+}
+
+#cadastro-modal, #login-modal, #criar-modal, #editar-modal{
+    width: 60%;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#criar-modal, #editar-modal{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#participantes-lbl{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-form{
+    width: 20%;
+}
+
+.campos-form{
+    width: 60%;
+}
+
+#nome-particpantes{
+    width: 100%; 
+}
+
+#btn-fechar, #btn-fecharA{
+    position: absolute;
+    top: 25%;
+    right: 16%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #1C82A2;
+    color: white;
+    font-weight: 700;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+#btn-fecharA{
+    top: 32%;
+}
+
+#espaco-para-btn{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+#btn-criar-tarefa, .btn-realizar{
+    background-color: #1C82A2;
+    color:white;
+    border-radius: 15px;
+    padding: 10px;
+    height: 100%;
+    cursor: pointer;
+}
+
+#btn-excluir{
+    background-color: red;
+    color:white;
+    border-radius: 15px;
+    padding: 10px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.quadros-tarefa{
+    width: 28%;
+    height: 80%;
+    background-color: #1C82A2;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tela-planejamento{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: auto;
+    text-align: center;
+}
+
+.fases-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title-tarefa{
+    margin: 10px 50px;
+    color: white;
+}
+
+.andamento, .concluido, .atraso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid white;
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+.separador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* .andamento{
+    border-color: orange;
+} 
+.concluido{
+    border-color: green;
+}
+.atraso{
+    border-color: red;
+} */
+
+.status-title{
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    color: #1C82A2;
+}
+
+.data{
+    color: green;
+}
+
+.edit{
+    border-radius: 15px;
+    border-color: #1C82A2;
+    color: #1C82A2;
+    position: relative;
+    left: 67%;
+    width: 30%;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 760px){
+    #tela-planejamento{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #preparativos, #durante-a-viagem, #finalizacao{
+        width: 100%;
+    }
+
+    #cadastro-modal, #login-modal, #criar-modal, #editar-modal{
+        width: 60%;
+        background-color: white;
+    }
+}
